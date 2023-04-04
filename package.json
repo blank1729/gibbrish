@@ -16,6 +16,7 @@
     "zustand": "^4.3.3"
   },
   "devDependencies": {
+    "jest": "^29.5.0",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import List from './List'
 import { course } from './types'
-import ThemeProvider, { themecontext } from '../ThemeContext'
+import ThemeProvider, { themecontext } from '../../ThemeContext'
 
 
 const list : Array<course> = [
@@ -13,14 +13,14 @@ const list : Array<course> = [
         number : 6.0001,
     },
     {
-        id: "a3dvgewr",
+        id: "a3dvr",
         name : "Intro to Programming in Python",
         institute : "MIT",
         season : "Fall 2023",
         number : 6.0001,
     },
     {
-        id: "a3dvgewr",
+        id: "a3dvwr",
         name : "Intro to Programming in Python",
         institute : "MIT",
         season : "Fall 2023",
@@ -29,10 +29,8 @@ const list : Array<course> = [
 ]
 
 function Courses() {
-    const value = useContext(themecontext)
   return (
     <div className='mx-[15%] mt-4'>
-        <div>{value}</div>
         <h1 className='text-4xl font-bold mb-2 text-blue-800'>Courses</h1>
         <hr />
         <List list={list}/>

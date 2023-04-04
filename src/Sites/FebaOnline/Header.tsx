@@ -10,16 +10,11 @@ function Header() {
             <img src="/imgs/feba.png" alt="" />
           </NavLink>
           <div className="flex">
-              <NavLink className="navlink" to={"/"}>Home</NavLink>
+              <NavLink className="navlink" to={"/febaradio"}>Home</NavLink>
               <NavLink className="navlink" to={"/about"}>About Us</NavLink>
               <NavLink className="navlink" to={"/contact"}>Contact</NavLink>
               <NavLink className="navlink" to={"/podcast"}>Podcast</NavLink>
               <NavLink className="navlink" to={"/blog"}>Blog</NavLink>
-              <NavLink className="navlink" to={"/dd"}>DragDrop</NavLink>
-              <NavLink className="navlink" to={"/studio"}>Studio</NavLink>
-              <NavLink className="navlink" to={"/courses"}>Courses</NavLink>
-              <NavLink className="navlink" to={"/pokimon"}>Pokimon</NavLink>
-              <NavLink className="navlink" to={"/jokes"}>Jokes</NavLink>
           </div>
         </nav>
       </header>

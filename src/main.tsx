@@ -5,21 +5,14 @@ import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import AnimatedRoutes from "./Routes/AnimatedRoutes";
-import Header from "./Components/Header";
-import Studio from "./studio/Studio";
+import Header from "./Sites/FebaOnline/Header";
+import Studio from "./Sites/studio/Studio";
 import ThemeProvider from "./ThemeContext";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-    <ThemeProvider>
-      <AnimatedRoutes />
-    </ThemeProvider>
-      <Routes>
-        <Route path="/studio" element={<Studio />}>
-          Studio
-        </Route>
-      </Routes>
+        <AnimatedRoutes />
     </BrowserRouter>
   </React.StrictMode>
 );
