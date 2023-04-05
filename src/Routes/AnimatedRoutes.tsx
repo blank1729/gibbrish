@@ -25,6 +25,7 @@ import Home from "../Sites/shop/Home";
 import ShopHeader from "../Sites/shop/Header";
 import Slider from "../Sites/Try/components/Slider";
 import Test from "../Sites/Try/Test";
+import Todo from "../Sites/Todo/Todo";
 
 // [reactjs - Render component on certain paths only react router v6 - Stack Overflow](https://stackoverflow.com/questions/71112957/render-component-on-certain-paths-only-react-router-v6)
 // used this for routing and rendering diffrent header for diffrent routes
@@ -98,7 +99,7 @@ function AnimatedRoutes() {
         >
           <Route path="/shop" element={<Home />}></Route>
         </Route>
-
+        <Route path="/todo" element={<Todo />} />
       </Routes>
 
     </AnimatePresence>
